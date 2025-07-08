@@ -32,7 +32,7 @@ class Tic_Tac_Toe():
         self.player_X_starts = True
         self.reset_board = False
         self.gameover = False
-        self.tie = False
+5        self.tie = False
         self.X_wins = False
         self.O_wins = False
 
