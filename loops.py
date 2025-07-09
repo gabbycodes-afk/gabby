@@ -80,7 +80,7 @@
 #     877
 
 
-# Month names and number of days
+
 month_names = [
     "January", "February", "March", "April", "May", "June",
     "July", "August", "September", "October", "November", "December"
@@ -89,17 +89,17 @@ month_names = [
 month_days = [31, 28, 31, 30, 31, 30,
               31, 31, 30, 31, 30, 31]
 
-# Day labels
+
 day_labels = ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"]
 
-# Year
+
 year = 2025
 
-# Check for leap year
+
 if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
     month_days[1] = 29
 
-# Function to calculate the starting weekday of any month
+
 def get_start_weekday(y, m):
     if m < 3:
         m += 12
@@ -107,9 +107,9 @@ def get_start_weekday(y, m):
     k = y % 100
     j = y // 100
     weekday = (1 + ((13 * (m + 1)) // 5) + k + (k // 4) + (j // 4) + 5 * j) % 7
-    return (weekday + 6) % 7  # Convert to Monday=0
+    return (weekday + 6) % 7  
 
-# Loop through each month
+
 for i in range(12):
     name = month_names[i]
     days = month_days[i]
