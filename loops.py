@@ -207,3 +207,207 @@
 
 # laptop = Laptop("HP", "8GB", "256GB")
 # laptop.specs()
+
+# class Animal:
+#     def __init__(self, name):
+#         self.name = name
+
+#     def move(self):
+#         print(f"{self.name} is moving")
+
+# class Dog(Animal):
+#     def bark(self):
+#         print(f"{self.name} says woof!")
+
+# d = Dog("Charlie")
+# d.move()
+# d.bark()
+
+
+# class Animal:
+#     def __init__(self, name):
+#         self.name = name
+#         print(f"Animal {self.name} created")
+
+# class Dog(Animal):
+#     def __init__(self, name, breed):
+#         super().__init__(name)
+#         self.breed = breed
+#         print(f"Dog {self.name}, Breed: {self.breed} created")
+
+# dog = Dog("Max", "German Shepherd")
+
+
+# class Person:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+
+#     def speak(self):
+#         print(f"My name is {self.name}, and i am {self.age} years old.")
+
+# class Student(Person):
+#     def __init__(self, name, age, student_id):
+#         super().__init__(name, age)
+#         self.student_id = student_id
+
+#     def study(self):
+#         print(f"Student {self.name} is studying...")
+
+# s1 = Student("Teniola", 18, "MIV2025")
+# s1.speak()
+# s1.study()
+
+
+# class Vehicle:
+#     def __init__(self, brand, color):
+#         self.brand = brand
+#         self.color = color
+
+#     def start(self):
+#         print(f"The vehicle is starting.")
+
+# class Car(Vehicle):
+#     def __init__(self, brand, color, model):
+#         super().__init__(brand, color)
+#         self.model = model
+
+#     def drive(self):
+#         print(f"The {self.brand} {self.model} is driving...")
+
+#     def start(self):
+#         print(f"The car engine is starting...")
+
+# my_car = Car("Toyota", "Red", "Corolla")
+# my_car.start()
+# my_car.drive()
+
+
+# class Employee:
+#     def __init__(self, name, salary):
+#         self.name = name
+#         self.salary = salary
+
+#     def work(self):
+#         print(f"{self.name} is working...")
+
+# class Manager(Employee):
+#     def __init__(self, name, salary, department):
+#         super().__init__(name, salary)
+#         self.department = department
+
+#     def manage(self):
+#         print(f"{self.name} is managing the {self.department} department.")
+
+# my_manager = Manager("Kolade", 2000000, "Finance")
+# my_manager.work()
+# my_manager.manage()
+
+# class Animal:
+#     def __init__(self, name):
+#         self.name = name
+
+#     def make_sound(self):
+#         print(f"{self.name} makes a sound..")
+
+# class Dog(Animal):
+#     def make_sound(self):
+#         print(f"{self.name} says Woof!")
+# class Cat(Animal):
+#     def make_sound(self):
+#         print(f"{self.name} says Meow!")
+
+# dog1 = Dog("Buddy")
+# cat1 = Cat("Whiskers")
+
+# dog1.make_sound()
+# cat1.make_sound()
+
+
+
+# class Appliance:
+#     def __init__(self, brand):
+#         self.brand = brand
+
+#     def power_on(self):
+#         print(f"The {self.brand} appliance is now on.")
+
+# class WashingMachine(Appliance):
+#     def power_on(self):
+#         print(f"{self.brand} washing machine is now washing clothes.")
+# class Refrigerator(Appliance):
+#     def power_on(self):
+#         print(f"{self.brand} refridgerator is now cooling.")
+
+# w1 = WashingMachine("Thermocool")
+# r1 = Refrigerator("Thermocool")
+
+# w1.power_on()
+# r1.power_on()
+
+
+# class Device:
+#     def __init__(self, brand):
+#         self.brand = brand
+
+#     def turn_on(self):
+#         print(f"The {self.brand} is turning on.")
+
+# class Phone(Device):
+#     def turn_on(self):
+#         print(f"{self.brand} is starting up...")
+# class Laptop(Device):
+#     def turn_on(self):
+#         print(f"{self.brand} laptop is booting...")
+
+
+# p1 = Phone("Iphone")
+# l1 = Laptop("Hp")
+
+# p1.turn_on()
+# l1.turn_on()
+
+# class Animal:
+#     def move(self):
+#         print(f"Animal is moving")
+
+# class Fish(Animal):
+#     def swim(self):
+#         print(f"Fish is swimming")
+
+# f = Fish()
+# f.move()
+# f.swim()
+
+# class GrandParent:
+#     def say_hello(self):
+#         print("Hello from Grandpa!")
+
+# class Parent(GrandParent):
+#     pass
+
+# class Child(Parent):
+#     pass
+
+
+# baby = Child()
+# baby.say_hello()
+
+
+
+class User:
+    def __init__(self, username):
+        self.username = username
+
+    def login(self):
+        print(f"{self.username} has logged in.")
+
+class Admin(User):
+    def delete_user(self):
+        print(f"{self.username} deleted a user")
+
+admin1 = Admin("Gabriel")
+admin1.login()
+admin1.delete_user()
+
+//
